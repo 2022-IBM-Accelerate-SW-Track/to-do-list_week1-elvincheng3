@@ -46,8 +46,8 @@ class AddTodo extends Component {
             onChange={this.handleChange}
             value={this.state.content}
           />
+          <div data-testid="new-item-button">
           <Button
-            data-testid="new-item-button" 
             style={{ marginLeft: "10px" }}
             onClick={this.handleSubmit}
             variant="contained"
@@ -55,6 +55,7 @@ class AddTodo extends Component {
           >
             Add
           </Button>
+          </div>
         </div>
       );
     }
